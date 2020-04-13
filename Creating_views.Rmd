@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(plotly)
+```
+
+## Test
+```{r}
+g <- ggplot(mtcars, aes(x = hp, y = mpg)) + geom_point()
+ggplotly(g)
+```
